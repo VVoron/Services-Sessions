@@ -77,12 +77,22 @@ namespace ServiceAPI
             RefreshListServ();
         }
 
-        private void StartForService(string ServiceName)
+        private string StartForService(string ServiceName)
         {
             ServiceController service = new ServiceController(ServiceName);
 
             service.Start();
             service.WaitForStatus(ServiceControllerStatus.Running, TimeSpan.FromMinutes(1));
+
+            ManagementObject wmiService;
+            wmiService = new ManagementObject("Win32_Service.Name='" + ServiceName + "'");
+            wmiService.Get();
+            string ServiceId = "";
+            if (wmiService["ProcessId"].ToString() != "0")
+            {
+                ServiceId = wmiService["ProcessId"].ToString();
+            }
+            return ServiceId;
         }
 
         public static void StopForService(string ServiceName)
@@ -97,7 +107,7 @@ namespace ServiceAPI
         {
             if (listView1.SelectedItems[0] != null)
             {
-                StartForService(listView1.SelectedItems[0].SubItems[0].Text);
+                listView1.SelectedItems[0].SubItems[1].Text = StartForService(listView1.SelectedItems[0].SubItems[0].Text);
                 listView1.SelectedItems[0].SubItems[3].Text = "Выполняется";
             }
         }
@@ -107,6 +117,7 @@ namespace ServiceAPI
             if (listView1.SelectedItems[0] != null)
             {
                 StopForService(listView1.SelectedItems[0].SubItems[0].Text);
+                listView1.SelectedItems[0].SubItems[1].Text = "";
                 listView1.SelectedItems[0].SubItems[3].Text = "Остановлено";
             }
         }
@@ -116,7 +127,7 @@ namespace ServiceAPI
             if (listView1.SelectedItems[0] != null)
             {
                 StopForService(listView1.SelectedItems[0].SubItems[0].Text);
-                StartForService(listView1.SelectedItems[0].SubItems[0].Text);
+                listView1.SelectedItems[0].SubItems[1].Text = StartForService(listView1.SelectedItems[0].SubItems[0].Text);
                 listView1.SelectedItems[0].SubItems[3].Text = "Выполняется";
             }
         }
@@ -611,6 +622,11 @@ namespace ServiceAPI
             {
                 richTextBox1.Text += sessions[i].ToString() + Environment.NewLine;
             }
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

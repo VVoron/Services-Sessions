@@ -20,3 +20,14 @@ C:\Users\79994\source\repos\ServiceAPI\ServiceAPI\obj\Debug\ServiceAPI.csproj.Ge
 C:\Users\79994\source\repos\ServiceAPI\ServiceAPI\obj\Debug\ServiceAPI.csproj.CoreCompileInputs.cache
 C:\Users\79994\source\repos\ServiceAPI\ServiceAPI\obj\Debug\ServiceAPI.exe
 C:\Users\79994\source\repos\ServiceAPI\ServiceAPI\obj\Debug\ServiceAPI.pdb
+C:\Users\79994\Documents\GitHub\Services-Sessions\ServiceAPI\bin\Debug\ServiceAPI.exe.config
+C:\Users\79994\Documents\GitHub\Services-Sessions\ServiceAPI\bin\Debug\ServiceAPI.exe
+C:\Users\79994\Documents\GitHub\Services-Sessions\ServiceAPI\bin\Debug\ServiceAPI.pdb
+C:\Users\79994\Documents\GitHub\Services-Sessions\ServiceAPI\obj\Debug\ServiceAPI.csproj.AssemblyReference.cache
+C:\Users\79994\Documents\GitHub\Services-Sessions\ServiceAPI\obj\Debug\ServiceAPI.csproj.SuggestedBindingRedirects.cache
+C:\Users\79994\Documents\GitHub\Services-Sessions\ServiceAPI\obj\Debug\ServiceAPI.Form1.resources
+C:\Users\79994\Documents\GitHub\Services-Sessions\ServiceAPI\obj\Debug\ServiceAPI.Properties.Resources.resources
+C:\Users\79994\Documents\GitHub\Services-Sessions\ServiceAPI\obj\Debug\ServiceAPI.csproj.GenerateResource.cache
+C:\Users\79994\Documents\GitHub\Services-Sessions\ServiceAPI\obj\Debug\ServiceAPI.csproj.CoreCompileInputs.cache
+C:\Users\79994\Documents\GitHub\Services-Sessions\ServiceAPI\obj\Debug\ServiceAPI.exe
+C:\Users\79994\Documents\GitHub\Services-Sessions\ServiceAPI\obj\Debug\ServiceAPI.pdb

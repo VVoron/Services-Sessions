@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4eb1c069-023c-4878-9161-30aef92871bd": {
+      "ProjectGuid": "4eb1c069-023c-4878-9161-30aef92871bd",
+      "DisplayName": "ServiceAPI",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
