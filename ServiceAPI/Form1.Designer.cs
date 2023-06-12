@@ -186,9 +186,10 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(8, 8);
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Location = new System.Drawing.Point(3, 3);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(828, 387);
+            this.richTextBox1.Size = new System.Drawing.Size(836, 417);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
